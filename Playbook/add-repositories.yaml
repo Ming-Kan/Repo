@@ -1,5 +1,4 @@
 ---
-  name: add Repositories
   hosts: all
   become: true
     # Add pve-no-subscription repository into sources list.
