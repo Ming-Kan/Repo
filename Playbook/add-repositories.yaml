@@ -1,8 +1,4 @@
----
-- hosts: all
-  become: true
-  tasks:
-    - name: update apt
-	ansible.builtin.apt_repository:
-      	 repo: deb http://download.proxmox.com/debian/pve bookworm pve-no-subscription
-	 state: present
+- name: Add specified repository into sources list
+  ansible.builtin.apt_repository:
+    repo: deb http://download.proxmox.com/debian/pve bookworm pve-no-subscription
+    state: present
