@@ -1,6 +1,6 @@
----
-  - hosts: all
-    become: true
+- hosts: all
+  become: true
+  tasks: 
     # Add pve-no-subscription repository into sources list.
     apt_repository:
       repo: deb http://download.proxmox.com/debian/pve bookworm pve-no-subscription
