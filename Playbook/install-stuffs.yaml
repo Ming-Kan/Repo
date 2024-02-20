@@ -1,0 +1,13 @@
+---
+ - name: Playbook to install stuffs
+   hosts: all
+   become: true
+   tasks: 
+    - name: Ansible apt install iptraf
+      apt:
+        name: 
+          - iptraf
+          - iftop
+          - vim
+          - mlocate
+        state: present
