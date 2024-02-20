@@ -1,5 +1,5 @@
 ---
- - name: Playbook to install stuffs
+ - name: Setup Repository
    hosts: all
    become: true
    tasks: 
