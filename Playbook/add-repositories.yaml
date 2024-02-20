@@ -16,7 +16,6 @@
   - name: Add Tailscale no-subscription APT repository
     apt_repository:
       repo: https://pkgs.tailscale.com/stable/debian bookworm main
-      state: present
 
   - name: Add Zabbix 6.4 APT repository
     apt_repository:
