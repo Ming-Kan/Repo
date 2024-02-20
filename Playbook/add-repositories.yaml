@@ -4,5 +4,5 @@
   tasks:
     - name: update apt
 	apt_repository:
-      	repo: deb http://download.proxmox.com/debian/pve bookworm pve-no-subscription
-	state: present
+      	 repo: deb http://download.proxmox.com/debian/pve bookworm pve-no-subscription
+	 state: present
