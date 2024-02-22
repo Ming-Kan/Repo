@@ -1,0 +1,6 @@
+- hosts: all
+  tasks:
+  - name : Uninstall Docker-CE package
+    apt: name=docker-ce state=absent
+  - name : Uninstall Docker-CE-CLI package
+    apt: name=docker-ce-cli state=absent
