@@ -4,3 +4,6 @@
     apt: name=docker-ce state=absent
   - name : Uninstall Docker-CE-CLI package
     apt: name=docker-ce-cli state=absent
+  - name : Uninstall Docker-CE-rootless-extras package
+    apt: name=docker-ce-rootless-extras state=absent
+
